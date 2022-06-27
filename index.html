@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter과제</title>
+    <style>
+        body > .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 15px;
+            /* background-color: azure;    */
+        }
+
+        body > .container >.mid{
+            padding: 10px;
+            /* background-color: blue;  */
+            flex-grow: 1;
+            flex-shrink: 1; 
+        }
+        body a{
+            text-decoration: none;
+            color: rgb(39, 38, 38);
+            padding-right: 6px;
+            font-size: 12px;
+        }
+        body a:hover{
+            text-decoration: underline;
+        }
+    
+        body > .container > .right{
+          display: block;
+          
+        }
+
+        .ic{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-image: url("https://velog.velcdn.com/images%2Foneook%2Fpost%2Fcd803c0e-2d84-43cb-810b-392032d43f09%2Fbento.png");
+        background-size: cover;
+        margin: 3px 6px 0 3px;
+        }
+
+        .A{
+            padding: 4px;
+            border-radius: 50%;
+            background-color: rgb(238, 113, 24);
+            border: 1px solid rgb(238, 113, 24);
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <a href="#" target="blank">Google 정보</a>
+            <a href="#" target="blank">스토어</a>
+        </div>
+        <div class="mid"></div>
+        <div class="right">
+            <a href="#" target="blank">Gmail</a>
+            <a href="#" target="blank">이미지</a>
+            
+        </div>
+        <div>
+            <div class="ic"></div>
+            <span class="A">A</span>
+        </div>
+    </div>
+</body>
+</html>
